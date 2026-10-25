@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сайт концертно-экскурсионных программ — афиша и экскурсии</title>
+  <meta name="description" content="Афиша концертов и обзорных экскурсий, краткие анонсы и календарь свободных дат.">
+  <meta name="theme-color" content="#191919">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="site-logo" href="index.html">Сайт концертно-экскурсионных программ</a>
+      <nav class="site-nav" aria-label="Основная навигация">
+        <ul class="site-nav__list">
+          <li><a href="afisha.html">Афиша</a></li>
+          <li><a href="event.html">Заказ билетов</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+          <li><a href="index.html#about">История дворца</a></li>
+          <li><a href="index.html#news">Галерея</a></li>
+          <li><a href="index.html#calendar">Планы залов</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container hero" aria-label="Ближайшие программы">
+      <figure class="hero__poster">
+        <img src="assets/images/theater.png" width="856" height="515" alt="Театральная сцена и зрительный зал">
+      </figure>
+      <ul class="hero__links">
+        <li>
+          <a class="announce-link" href="event.html">
+            <img class="announce-link__thumb" src="assets/images/opera-thumb.png" width="56" height="56" alt="">
+            <span>Опера VS Оперетта</span>
+            <span class="announce-link__arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+        <li>
+          <a class="announce-link" href="event.html">
+            <img class="announce-link__thumb" src="assets/images/hall.png" width="56" height="56" alt="">
+            <span>Антонио Вивальди. Времена года</span>
+            <span class="announce-link__arrow" aria-hidden="true">↗</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="container section" id="poster">
+      <div class="section-head">
+        <h1 class="section-head__title">Афиша</h1>
+        <a class="section-head__all" href="afisha.html">Все мероприятия</a>
+      </div>
+
+      <ul class="event-list">
+        <li>
+          <article class="event-card">
+            <p class="event-card__date">
+              <span class="event-card__day">3</span>
+              <span class="event-card__month">июня</span>
+            </p>
+            <img class="event-card__poster" src="assets/images/vivaldi.png" width="320" height="240" loading="lazy" alt="Зрительный зал на концерте">
+            <div class="event-card__info">
+              <h2 class="event-card__title">Антонио Вивальди. Времена года</h2>
+              <p class="event-card__subtitle">Посвящение Фрэнку Синатре.</p>
+              <ul class="meta">
+                <li class="meta__item meta__item--genre">Джаз</li>
+                <li class="meta__item meta__item--time"><time datetime="19:00">19:00</time></li>
+                <li class="meta__item meta__item--age">6+</li>
+              </ul>
+            </div>
+            <a class="button" href="event.html">Заказать билет</a>
+          </article>
+        </li>
+        <li>
+          <article class="event-card">
+            <p class="event-card__date">
+              <span class="event-card__day">30</span>
+              <span class="event-card__month">июня</span>
+            </p>
+            <img class="event-card__poster" src="assets/images/opera.png" width="320" height="240" loading="lazy" alt="Артисты оперетты на сцене">
+            <div class="event-card__info">
+              <h2 class="event-card__title">Опера VS Оперетта</h2>
+              <p class="event-card__subtitle">Санкт-Петербургский камерный оркестр Olympic Orchestra</p>
+              <ul class="meta">
+                <li class="meta__item meta__item--genre">Классика</li>
+              </ul>
+            </div>
+            <a class="button" href="event.html">Заказать билет</a>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <div class="container feature-row">
+      <section class="news" id="news">
+        <h2 class="news__title">Новости</h2>
+        <div class="news__grid">
+          <article class="news-card">
+            <img class="news-card__image" src="assets/images/news-gallery.png" width="240" height="160" loading="lazy" alt="Выставочный зал">
+            <h3 class="news-card__title">Переносы / Отмена мероприятий</h3>
+            <p class="news-card__text">11.04.2023 г. в 19.00 час. — концерт «Опера vs. Оперетта» ПЕРЕНЕСЁН на 05.06.2023 г. в 19.00 час.</p>
+          </article>
+          <article class="news-card">
+            <img class="news-card__image" src="assets/images/news-museum.png" width="240" height="160" loading="lazy" alt="Экспозиция музея">
+            <h3 class="news-card__title">Переносы / Отмена мероприятий</h3>
+            <p class="news-card__text">11.04.2023 г. в 19.00 час. — концерт «Опера vs. Оперетта» ПЕРЕНЕСЁН на 05.06.2023 г. в 19.00 час.</p>
+          </article>
+        </div>
+      </section>
+
+      <aside class="excursions" id="calendar">
+        <div class="excursions__cover">
+          <img src="assets/images/excursion-cover.png" width="526" height="236" loading="lazy" alt="Исторический интерьер с картинами">
+          <h2 class="excursions__title">Обзорные экскурсии</h2>
+        </div>
+
+        <div class="calendar" data-calendar>
+          <div class="calendar__side">
+            <h3 class="calendar__month" data-calendar-title aria-live="polite">Июль</h3>
+            <div class="calendar__controls">
+              <button class="calendar__arrow" type="button" data-calendar-prev aria-label="Предыдущий месяц">‹</button>
+              <button class="calendar__arrow" type="button" data-calendar-next aria-label="Следующий месяц">›</button>
+            </div>
+          </div>
+          <div class="calendar__board">
+            <div class="calendar__weekdays" aria-hidden="true">
+              <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+            </div>
+            <div class="calendar__days" data-calendar-grid role="group" aria-label="Календарь экскурсий"></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="container section section--last" id="about">
+      <div class="section-head">
+        <h2 class="section-head__title">Краткие анонсы</h2>
+        <a class="section-head__all" href="afisha.html">Все мероприятия</a>
+      </div>
+      <div class="promo-grid">
+        <article class="promo">
+          <time class="promo__badge" datetime="2023-06-03">
+            <span class="promo__day">3</span>
+            <span class="promo__month">июня</span>
+          </time>
+          <p class="promo__text">«Век имени Синатры»</p>
+        </article>
+        <article class="promo">
+          <time class="promo__badge" datetime="2023-06-03">
+            <span class="promo__day">3</span>
+            <span class="promo__month">июня</span>
+          </time>
+          <p class="promo__text">«Век имени Синатры»</p>
+        </article>
+        <article class="promo">
+          <time class="promo__badge" datetime="2023-06-03">
+            <span class="promo__day">3</span>
+            <span class="promo__month">июня</span>
+          </time>
+          <p class="promo__text">«Век имени Синатры»</p>
+        </article>
+        <article class="promo">
+          <time class="promo__badge" datetime="2023-06-03">
+            <span class="promo__day">3</span>
+            <span class="promo__month">июня</span>
+          </time>
+          <p class="promo__text">«Век имени Синатры»</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__top">
+        <a class="site-logo" href="index.html">Сайт концертно-экскурсионных программ</a>
+        <div class="footer-block">
+          <h2 class="footer-block__title">Мероприятия</h2>
+          <nav class="footer-links" aria-label="Мероприятия">
+            <a href="index.html#calendar">Экскурсии</a>
+            <a href="afisha.html">Концерты</a>
+            <a href="afisha.html">Афиша</a>
+          </nav>
+        </div>
+        <div class="footer-block">
+          <h2 class="footer-block__title">Контакты</h2>
+          <address class="footer-contact">
+            <p>г. Санкт-Петербург, Невский пр., д. 1</p>
+            <a href="mailto:text@mail.ru">text@mail.ru</a>
+            <a href="tel:+78121234567">(812) 123-45-67</a>
+          </address>
+        </div>
+      </div>
+      <p class="site-footer__note">Сайт концертно-экскурсионных программ</p>
+    </div>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
